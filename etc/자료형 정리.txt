@@ -1,0 +1,9 @@
+.isdigit() : 숫자 모양이면 True *return > bool
+isdecimal() : int형으로 변환 가능한지 알아본다 특수기호는 숫자로 보지 않는다 *return > bool 
+.lstrip() : 문자열의 모든 조합을 제거 ex) apple.lstrip(ap) => ple *return > str
+.count() : 문자열에 있는 갯수 찾기 ex) apple.count(p) => 2 *return > int
+.isnumeric() : 문자열을 숫자로 변환, 제곱근 및 분수, 거듭제곱 특수문자 포함 *return > bool
+datetime.datetime.now().hour : 지금 시간 나타내기
+pass : 조건문시 지금 작성하지 않을때 
+몫 : / 소수점 // 정수
+
