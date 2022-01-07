@@ -1,3 +1,5 @@
+# 원의 반지름을 입력받아 원의 둘레와 넓이 구하기
+
 from math import pi
 
 def circle_round(num):

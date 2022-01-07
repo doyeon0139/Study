@@ -1,4 +1,4 @@
-# if else 예제 오전/오후
+# if else 예제 오전/오후 구분하기
 
 import datetime
 
