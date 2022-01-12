@@ -18,3 +18,39 @@ print('n = {:7d}\nm = {:7s}\nf = {:7.2f}'.format(n,m,f)) n은 정수 m은 문자
  변수 내용이 한줄에 나오게 할 때에는 print(변수, end='')
  print(''.join(리스트)) : 리스트에 있는 글자를 한 단어처럼 붙여줌
  세계 표준시(UTC) : 1970. 01. 01 00.00.00 기준 현재까지 누적 초 ex)import time/print('UTC : ', time.time())
+iterateor? 이터레이터?
+함수 안에 global m : 전역변수랑 지역변수 같이 쓰기
+map 의미 합치기? 바꾸기?
+예외처리 구문 오류와 예외 
+.text : 텍스트만 가져옴
+백업 폴더에 git clone https://github.com/narospace/hongongpython.git
+Exception : 모든 에러 집합 클래스
+.find : 찾기
+.get_text() : text 만 출력   .text랑 다른 점 찾기
+.replace :
+.lower() : 소문자 출력
+.upper() : 대문자 출력
+.count('o') : o 갯수 세기
+.index('o') : (o)의 인덱스 숫자 찾기
+.replace('tale','story') : 찾아 바꾸기 (tale을 story로)
+.insert(인덱스, '바꿀내용') : 리스트에서 내용 바꾸기
+.pop(인덱스) : 리스트에서 제거
+.remove('요소이름') : 리스트에서 제거
+del sol[1:4] : 리스트에서 슬라이싱으로 제거
+sorted(리스트, reverse=True) : 내림차순 정렬
+sorted(리스트) : 오름차순 정렬
+.clear() : 리스트 요소 지우기
+del : 리스트 삭제, del sol[:] : 리스트의 슬라이싱 삭제
+.update({1,2}) : set 요소추가
+.union(합칠 튜플) : 튜플합집합
+.intersection(B) : 튜플교집합
+.difference(B) : 튜플 차집합
+.symmetric_difference(B) : 튜플 대칭 차집합
+.issubset(A) : 튜플 부분집합 확인
+.issuperset(C) : 튜플에 c 튜플이 포함하는지 확인
+.keys() : 딕셔너리에서 키만 출력
+.values() : 딕셔너리에서 value만 출력
+.items() : 딕셔너리 튜플로 출력
+딕셔너리.get('pink') : 딕셔너리에서 없는 키값을 오류 없이 출력할때 
+딕셔너리.setdefault('pink', 20) : 딕셔너리에서 pink값을 출력하되 없으면 값이랑 같이 만들어주기
+딕셔너리.update(yourdict) : 딕셔너리에 yourdict라는 딕셔너리 추가할 때
