@@ -1,0 +1,13 @@
+# 2011년도에 오직 한 사람만이 수행하는 job의 갯수는?
+sum(dd[dd['Year']==2011]['JobTitle'].value_counts()==1)
+
+# 'Chief'라는 직업을 가진 사람의 수
+sum(dd['JobTitle'].apply(lambda x:'chief' in x.lower()))
+
+# 1~12월 사이 각 월의 일평균기온의 bax chart를 그리시오
+we = []
+for i in range(1, 13):
+    we.append([k for j, k in zip(df['일시'], df['평온']) if j.month ==i])
+
+# 인구수, 외국인비율, 고령자 비율 중에서 인구당 cctv 수에 가장 큰 영향을 미치는 요소는 무엇인가
+sns.heatmap(tt.drop(['소계','2013년도 이전','2014년','2015년','2016년','한국인'], axis=1).corr(), cmap=plt.cm.rainbow)
