@@ -5,7 +5,7 @@ sum(dd[dd['Year']==2011]['JobTitle'].value_counts()==1)
 sum(dd['JobTitle'].apply(lambda x:'chief' in x.lower()))
 sum이 궁금
 
-# 1~12월 사이 각 월의 일평균기온의 bax chart를 그리시오
+# 1~12월 사이 각 월의 일평균기온의 box chart를 그리시오
 we = []
 for i in range(1, 13):
     we.append([k for j, k in zip(df['일시'], df['평온']) if j.month ==i])
