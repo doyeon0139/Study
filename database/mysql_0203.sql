@@ -50,28 +50,54 @@ select * from usertbl;
 select * from buytbl;
 
 -- 김경호라는 가수의 데이터를 출력
+use sqldb;
+select * from usertbl;
+select * from buytbl;
+select * from usertbl where username = '김경호';
+
 -- 출생연도가 1970년 이후이고, 키가 182 이상인 회원의 userid를 출력
+select userid from usertbl where birthyear > 1970 and height > 182;
 -- 출생연도가 1970년 이후이거나, 키가 182 이상인 회원의 userid를 출력
+select userid from usertbl where birthyear >1970 or height > 182;
 -- 키가 180 이상이고 183 이하인 회원의 이름을 출력
+select username from usertbl where height between 180 and 183; 
 -- 출생지가 '경남', '전남' 또는 '경북'인 회원의 이름과 아이디를 출력
+select username, userid from usertbl where addr in ('경남', '전남', '경북');
 -- 텍스트 검색
 -- 성이 '김'인 사람의 데이터를 출력
+select * from usertbl where username like '김%';
 -- 이름이 '종신'인 사람의 데이터를 출력
+select * from usertbl where username like '%종신';
 -- 이름이 '종신'인 성이 한 글자만 사람의 데이터를 출력
+select * from usertbl where username like '_종신';
 -- 키가 178 이상인 사람의 데이터를 출력
+select * from usertbl where height > 178;
 -- 임재범 보다 키가 큰 사람의 데이터를 출력
+select * from usertbl where height > (select height from usertbl where username = '임재범');
 -- 임재범 보다 나이가 많은 사람의 이름을 출력하시오
+select * from usertbl where birthYear < (select birthYear from usertbl where username = '임재범');
 -- 김범수와 출생지역이 동일한 사람의 데이터ㅡㄹ 출력
+select * from usertbl where addr = (select addr from usertbl where username = '김범수');
 -- 경남에 사는 사람 보다 키가 큰 사람의 데이터를 출력
+select * from usertbl where height > all(select height from usertbl where addr = '경남');
 -- 경남에 사는 사람 보다 키가 동일한 사람의 데이터를 출력
+select * from usertbl where height in (select height from usertbl where addr = '경남');
 -- 출생 기준으로 오름차순 정렬해서 출력
+select * from usertbl order by birthYear;
 -- 출생 기준으로 내림차순 정렬해서 출력
+select * from usertbl order by birthYear desc;
 -- 키 순으로 오름차순 정렬하시오
+select * from usertbl order by height;
 -- 키 순으로 내림차순 정렬하시오
+select * from usertbl order by height desc;
 -- 출생지의 종류를 중복값없이 출력하시오
+select distinct(addr) from usertbl;
 -- 출생지 종류수를 출력
+select count(addr) from usertbl;
 -- n개만 출력
+select count(distinct(addr)) from usertbl;
 -- 키가 가장 큰 사람의 이름을 출력하시오
+select username from usertbl order by height desc limit 1;
 -- subquery를 이용해서 기존 table을 복사해서 새로운 table을 생성
 
 
