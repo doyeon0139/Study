@@ -1,0 +1,22 @@
+당기순이익 
+ifrs-full_ProfitLoss
+
+자기자본, 순자산 => 자본총계 
+ifrs-full_Equity
+
+주식수 = > 주당이익 으로 계산
+ifrsfullBasicEarningsLossPerShare
+
+매출총이익 
+ifrs-full_GrossProfit
+
+총자산 = 자산총계
+ifrs-full_Assets
+
+영업활동으로 인한 현금흐름
+ifrs-full_CashFlowsFromUsedInOperatingActivities
+
+투자활동으로 인한 현금흐름
+ifrs-full_CashFlowsFromUsedInInvestingActivities
+
+재무활동으로 인한
