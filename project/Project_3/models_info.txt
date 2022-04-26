@@ -1,0 +1,48 @@
+models
+v2_basic
+dens1024
+dens1024
+dens512
+[1.5882049798965454, 0.8020114898681641]
+======================
+v2_2
+dens512
+dens128
+[1.5267781019210815, 0.8031609058380127]
+===================================
+v2_3
+dens512
+dens256
+dens128
+[1.2551782131195068, 0.8035919666290283]
+===================================
+v2_4
+x=Dense(512,activation='relu')(x)
+x=Dense(256,activation='relu')(x)
+preds=Dense(183,activation='softmax')(x) 
+[2.904170036315918, 0.7324756383895874]
+===================================
+v2_5
+x=Dense(512,activation='relu')(x)
+x=Dense(256,activation='relu')(x)
+x=Dense(128,activation='relu')(x)
+preds=Dense(73,activation='softmax')(x)
+optimizer= Adam (learning_rate=.0005) 
+[1.1177177429199219, 0.8326149582862854]
+===========================================
+v2_6
+x=Dense(512,activation='relu')(x)
+x=Dense(256,activation='relu')(x)
+x=Dense(128,activation='relu')(x)
+preds=Dense(73,activation='softmax')(x) 
+optimizer= Adam (learning_rate=.0003)
+[0.9840381741523743, 0.8589080572128296]
+=============================================
+v2_7
+x=Dense(1024,activation='relu')(x)
+x=Dense(512,activation='relu')(x)
+x=Dense(256,activation='relu')(x)
+preds=Dense(183,activation='softmax')(x) 
+optimizer= Adam (learning_rate=.0003)
+[1.316282033920288, 0.835067629814148]
+
